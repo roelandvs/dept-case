@@ -26,5 +26,6 @@ gulp.task('processJS', async function() {
 })
 
 gulp.task('watch', function() {
-    gulp.watch('./src/css/*.css', gulp.series('processCSS'));
+    gulp.watch('./src/css/*.css', gulp.series('processCSS'))
+    gulp.watch('./src/js/*.js', gulp.series('processJS'))
 });
