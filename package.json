@@ -1,0 +1,22 @@
+{
+  "name": "dept-case",
+  "version": "1.0.0",
+  "description": "Dept test case",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roelandvs/dept-case.git"
+  },
+  "author": "Roeland van Stee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roelandvs/dept-case/issues"
+  },
+  "homepage": "https://github.com/roelandvs/dept-case#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
