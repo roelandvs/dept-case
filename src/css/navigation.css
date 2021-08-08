@@ -27,35 +27,36 @@ nav {
     background-color: #000;
     color: #FFF;
     font-weight: 400;
+    font-size: 1.9em;
+    line-height: 1.1em;
     text-transform: uppercase;
     justify-content: center;
     text-align: right;
+    transition: 0.4s ease-out;
 }
 
 .nav-overlay li {
-    list-style-position: inside;
+    /* list-style-position: inside; */
 }
 
 .nav-overlay li:not(li:last-of-type) {
     border-bottom: 2px solid rgba(255, 255, 255, .3);
 }
 
-.nav-overlay li::marker {
+/* .nav-overlay li::marker {
     content: "▶";
-    color:rgba(255, 255, 255, 0);
+    color:rgba(255, 255, 255, 1);
 }
 
 .nav-overlay li:hover::marker {
     color:rgba(255, 255, 255, 1);
-}
+} */
 
 .nav-overlay a {
-    padding-left: 10px;
-}
-
-.nav-overlay.open {
-    opacity: 1;
-    pointer-events: all;
+    display: block;
+    overflow: hidden;
+    /* add padding to top to make caps look centered vertically*/
+    padding-top: 5px;
 }
 
 /* Overlay icon  */
@@ -68,6 +69,7 @@ nav {
     border: 0;
     position: relative;
     justify-content: center;
+    z-index: 10;
 }
 
 .overlay-icon > span {
@@ -82,4 +84,23 @@ nav {
     margin: 2px 0;
     display: block;
     background-color: #000;
+    transition: 0.4s ease-out;
+}
+
+/* Nav open */
+nav.open .nav-overlay {
+    opacity: 1;
+    pointer-events: all;
+}
+
+nav.open .overlay-icon > div {
+    background-color: #fff;
+}
+
+nav.open .overlay-icon > div:nth-of-type(1) {
+    transform: rotateZ(45deg) translateY(5px);
+}
+
+nav.open .overlay-icon > div:nth-of-type(2) {
+    transform: rotateZ(-45deg) translateY(-5px);
 }
