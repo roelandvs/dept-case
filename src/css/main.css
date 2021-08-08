@@ -1,3 +1,7 @@
+:root {
+    --case-opacity: 1;
+}
+
 /* Cases section */
 .cases-container {
     padding: var(--padding-l) var(--padding-m);
@@ -11,6 +15,7 @@
 .case {
     width: 100%;
     margin-bottom: var(--margin-l);
+    opacity: var(--case-opacity);
 }
 
 .case img {
@@ -66,6 +71,17 @@
 
 .m-screen {
     display: none;
+}
+
+@keyframes animIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Tablets */
