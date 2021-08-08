@@ -4,24 +4,20 @@ footer {
     padding: 0 var(--padding-m);
 }
 
-footer h2 {
-    display: none;
-}
-
 /* Above line in footer */
 .link-container {
     display: flex;
     justify-content: space-between;
     padding: 40px 0;
     border-bottom: 1px solid #3E3E3E;
+    text-transform: uppercase;
 }
 
-.footer-nav {
-    font-size: 2em;
-}
-
+.footer-nav,
 .footer-socials {
     font-size: 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-socials li {
@@ -35,10 +31,16 @@ footer h2 {
     border-radius: 100%;
 }
 
+h2.l-screen {
+    display: none;
+}
+
 /* Under line in footer */
 /* Not very good name for class */
 .dept-info {
     padding: 40px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .dept-info,
@@ -53,9 +55,56 @@ footer h2 {
 
 .dept-info ul {
     margin-bottom: var(--margin-m);
+    display: flex;
+    flex-direction: column;
 }
 
 .dept-info li {
-    margin-bottom: 5px;
+    margin: 0 var(--margin-m) 5px 0;
 }
 
+.link-container,
+.dept-info {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--padding-l) var(--padding-m);
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+    footer h2 {
+        margin: 0;
+    }
+
+    .footer-nav,
+    .footer-socials {
+        flex-direction: row;
+        font-size: 1.1em;
+        justify-items: center;
+    }
+
+    .footer-nav li,
+    .footer-socials li {
+        margin: 0 10px;
+    }
+
+    h2.l-screen {
+        display: inline-block;
+        font-size: 2em;
+    }
+
+    .footer-socials div {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Under line in footer */
+    .dept-info {
+        justify-content: space-between;
+    }
+
+    .dept-info,
+    .dept-info ul {
+        flex-direction: row;
+    }
+}

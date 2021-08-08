@@ -64,7 +64,7 @@
     margin-bottom: 5px;
 }
 
-.l-screen {
+.m-screen {
     display: none;
 }
 
@@ -76,7 +76,7 @@
     }
 
     /* Clients section */
-    .l-screen {
+    .m-screen {
         display: inline;
     }
 }
