@@ -13,6 +13,8 @@
 
     --cl-text: #272727;
     --cl-text-light: #939393;
+    --cl-bg-dark: #0E0E0E;
+    --cl-bg-light: #F3F6F6;
 }
 
 body {
@@ -56,6 +58,7 @@ li {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 a:visited {

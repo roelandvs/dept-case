@@ -1,0 +1,61 @@
+footer {
+    background-color: var(--cl-bg-dark);
+    color: #fff;
+    padding: 0 var(--padding-m);
+}
+
+footer h2 {
+    display: none;
+}
+
+/* Above line in footer */
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    border-bottom: 1px solid #3E3E3E;
+}
+
+.footer-nav {
+    font-size: 2em;
+}
+
+.footer-socials {
+    font-size: 2em;
+}
+
+.footer-socials li {
+    margin-bottom: var(--margin-m);
+}
+
+.footer-socials div {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+/* Under line in footer */
+/* Not very good name for class */
+.dept-info {
+    padding: 40px 0;
+}
+
+.dept-info,
+.dept-info a,
+.dept-info a:visited,
+.dept-info p {
+    color: #808080;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+.dept-info ul {
+    margin-bottom: var(--margin-m);
+}
+
+.dept-info li {
+    margin-bottom: 5px;
+}
+
