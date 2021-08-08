@@ -7,16 +7,34 @@
 :root {
     --padding-m: 20px;
     --margin-m: 20px;
+
+    --margin-l: 50px;
+
+    --cl-text: #272727;
+    --cl-text-light: #939393;
 }
 
 body {
     font-family: 'Teko', sans-serif;
-    text-transform: uppercase;
+    color: var(--cl-text);
 }
 
 /* Fonts */
-h1 {
+h1,
+h2,
+h3 {
     font-weight: 400;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h1,
+h2,
+.case p,
+.nav-overlay {
+    text-transform: uppercase;
 }
 
 /* General styling */

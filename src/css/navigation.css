@@ -42,7 +42,7 @@ nav {
 }
 
 .nav-overlay li:not(li:last-of-type) {
-    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
 }
 
 /* .nav-overlay li::marker {
