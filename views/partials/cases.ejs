@@ -2,9 +2,23 @@
     <ul class="cases-container">
         <% data.forEach(tile => { %>
             <li class="case">
-                <img src="./img/<%= tile.img %>" alt="<%= tile.client %>">
-                <p><%= tile.client %></p>
-                <h3><%= tile.title %></h3>
+                <a href="">
+                    <img src="./img/<%= tile.img %>" alt="<%= tile.client %>">
+                    <p><%= tile.client %></p>
+                    <h3><%= tile.title %></h3>
+
+                    <p class="view-link m-screen">
+                        <span>
+                            <svg height="16" width="16">
+                                <polygon points="10,4 4,16 16,16"/>
+                            </svg>
+                        </span>
+                        <span class="view-text">
+                            View case
+                        </span>
+                    </p>
+
+                </a>
             </li>
         <% }) %>
     </ul>
