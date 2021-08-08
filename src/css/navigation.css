@@ -14,7 +14,7 @@ nav {
 .menu-bar {
     display: flex;
     justify-content: space-between;
-    max-width: var(--max-width);
+    max-width: calc(var(--max-width) - 2 * var(--padding-m));
     margin: 0 auto;
 }
 
