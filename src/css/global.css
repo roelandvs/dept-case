@@ -6,8 +6,9 @@
 
 :root {
     --padding-m: 20px;
-    --margin-m: 20px;
+    --padding-l: 50px;
 
+    --margin-m: 20px;
     --margin-l: 50px;
 
     --cl-text: #272727;
@@ -26,8 +27,14 @@ h3 {
     font-weight: 400;
 }
 
+h2,
 h3 {
-    font-size: 2em;
+    font-size: 1.9em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: var(--margin-m);
 }
 
 h1,
@@ -35,6 +42,11 @@ h2,
 .case p,
 .nav-overlay {
     text-transform: uppercase;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 /* General styling */
@@ -50,7 +62,7 @@ a:visited {
     color: #fff;
 }
 
-.btn-apprnc {
+.btn-look {
     background-color: #101010;
     color: #fff;
     padding: 10px;

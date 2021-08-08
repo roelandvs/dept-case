@@ -1,5 +1,6 @@
-main {
-    padding: 50px var(--padding-m);
+/* Cases section */
+.cases-container {
+    padding: var(--padding-l) var(--padding-m);
 }
 
 .case {
@@ -20,5 +21,35 @@ main {
 
 .case img,
 .case p {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin-m);
+}
+
+/* Clients section */
+.clients-container {
+    background-color: #F3F6F6;
+}
+
+.clients-container > div {
+    padding: 40px var(--padding-m);
+}
+
+.clients-container p {
+    text-align: center;
+    font-weight: 200;
+    line-height: 1.6em;
+    margin-bottom: var(--margin-l);
+}
+
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.clients-list li {
+    width: calc(50% - 20px);
+    height: 80px;
+    background-color: rgb(199, 199, 199);
+    margin-bottom: 5px;
 }
