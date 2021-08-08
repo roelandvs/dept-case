@@ -1,9 +1,12 @@
 nav {
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
     position: -webkit-sticky;
     padding: var(--padding-m);
     font-size: 1.4em;
     font-weight: 500;
+    z-index: 10;
 }
 
 /* Menu bar */
@@ -24,12 +27,11 @@ nav {
     padding: var(--padding-m);
     opacity: 0;
     pointer-events: none;
-    background-color: #000;
+    background-color: #101010;
     color: #FFF;
     font-weight: 400;
     font-size: 1.9em;
     line-height: 1.1em;
-    text-transform: uppercase;
     justify-content: center;
     text-align: right;
     transition: 0.4s ease-out;
@@ -83,7 +85,7 @@ nav {
     height: 3px;
     margin: 2px 0;
     display: block;
-    background-color: #000;
+    background-color: #101010;
     transition: 0.4s ease-out;
 }
 
