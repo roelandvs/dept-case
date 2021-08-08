@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --padding-m: 20px;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+}
+
+/* Fonts */
+
+/* General styling */
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+}
