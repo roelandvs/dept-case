@@ -15,6 +15,7 @@
     --cl-text-light: #939393;
     --cl-bg-dark: #0E0E0E;
     --cl-bg-light: #F3F6F6;
+    --cl-blue: #1a18f7;
 
     --max-width: 1200px;
 }
@@ -61,8 +62,13 @@ li {
 a {
     text-decoration: none;
     color: #fff;
+    transition: 0.3s ease-out;
 }
 
 a:visited {
     color: #fff;
+}
+
+a:hover {
+    color: var(--cl-blue);
 }

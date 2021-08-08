@@ -32,6 +32,11 @@ h1 {
     font-size: 1.3em;
 }
 
+.btn-look:hover {
+    color: var(--cl-text);
+    background-color: #fff;
+}
+
 /* Tablets */
 @media only screen and (min-width: 768px) {
     h1 {
@@ -67,6 +72,7 @@ h1 {
         width: 150px;
         margin: 0;
         margin-left: auto;
+        transition: 0.3s ease-out;
     }
 }
 

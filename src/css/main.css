@@ -3,6 +3,10 @@
 }
 
 /* Cases section */
+h3 {
+    color: var(--cl-text);
+}
+
 .cases-container {
     padding: var(--padding-l) var(--padding-m);
     max-width: var(--max-width);
