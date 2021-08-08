@@ -2,12 +2,6 @@ header {
     width: 100%;
 }
 
-.header-container > div {
-    width: 100%;
-    height: 50vh; 
-    overflow: hidden;
-}
-
 h1 {
     position: absolute;
     font-size: 20vh;
@@ -16,8 +10,69 @@ h1 {
     line-height: 1em;
 }
 
+.header-container > div {
+    width: 100%;
+    height: 50vh; 
+    overflow: hidden;
+}
+
 .header-container img {
     width: 100vmax;
     margin: 0 auto;
 }
 
+.btn-look {
+    background-color: #101010;
+    color: #fff;
+    padding: 10px;
+    margin: var(--margin-m);
+    width: calc(100% - 2 * var(--padding-m));
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 45vmin;
+        width: 100%;
+        max-width: var(--max-width);
+        left: 0;
+        right: 0;
+        margin: 30vh auto 10vh;
+    }
+
+    .header-container > div {
+        height: 100vh; 
+    }
+
+    .header-container img {
+        width: 140vmax;
+    }
+
+    .btn-container {
+        width: 100%;
+        max-width: var(--max-width);
+        padding: 0 var(--padding-m);
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        bottom: 40px;
+    }
+
+    .btn-look {
+        display: block;
+        width: 150px;
+        margin: 0;
+        margin-left: auto;
+    }
+}
+
+/* Laptops */
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 300px;
+    }
+}

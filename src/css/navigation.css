@@ -1,8 +1,9 @@
 nav {
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    position: -webkit-sticky;
     padding: var(--padding-m);
     font-size: 1.4em;
     font-weight: 500;
@@ -13,10 +14,14 @@ nav {
 .menu-bar {
     display: flex;
     justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
 .menu-bar p {
     font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
 }
 
 /* Nav overlay */
@@ -43,6 +48,9 @@ nav {
 
 .nav-overlay li {
     /* list-style-position: inside; */
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
 .nav-overlay li:not(li:last-of-type) {
@@ -71,6 +79,7 @@ nav {
     flex-direction: column;
     height: 30px;
     width: 25px;
+    margin: auto 0;
     background-color: transparent;
     border: 0;
     position: relative;
@@ -109,4 +118,26 @@ nav.open .overlay-icon > div:nth-of-type(1) {
 
 nav.open .overlay-icon > div:nth-of-type(2) {
     transform: rotateZ(-45deg) translateY(-5px);
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) {
+    .menu-bar {
+        border-bottom: 1px solid #000;
+    }
+
+    .menu-bar p {
+        font-size: 1.5em;
+    }
+
+    .nav-overlay {
+        font-size: 2.2em;
+    }
+}
+
+/* Laptops */
+@media only screen and (min-width: 1024px) {
+    .nav-overlay {
+        font-size: 2.5em;
+    }
 }
