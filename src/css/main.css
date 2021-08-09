@@ -124,7 +124,7 @@ p.view-link {
     }
 
     .cases-container {
-        padding: var(--padding-l);
+        padding: var(--padding-l) var(--padding-m);
     }
 
     /* Clients section */
