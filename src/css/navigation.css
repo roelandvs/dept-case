@@ -56,7 +56,6 @@ nav.scroll .menu-bar {
 }
 
 .nav-overlay li {
-    /* list-style-position: inside; */
     width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
@@ -65,15 +64,6 @@ nav.scroll .menu-bar {
 .nav-overlay li:not(li:last-of-type) {
     border-bottom: 1px solid rgba(255, 255, 255, .4);
 }
-
-/* .nav-overlay li::marker {
-    content: "▶";
-    color:rgba(255, 255, 255, 1);
-}
-
-.nav-overlay li:hover::marker {
-    color:rgba(255, 255, 255, 1);
-} */
 
 .nav-overlay a {
     display: block;
@@ -152,5 +142,26 @@ nav.open .overlay-icon > div:nth-of-type(2) {
 @media only screen and (min-width: 1024px) {
     .nav-overlay {
         font-size: 2.5em;
+    }
+
+    .nav-overlay a {
+        opacity: 0.6;
+    }
+
+    .nav-overlay a:hover {
+        opacity: 1;
+        color: #fff;
+    }
+    
+    .nav-overlay li:hover svg {
+        opacity: 1;
+        transform: rotateZ(90deg) scale(2) translateX(-5px) translateY(5px);
+    }
+
+    .nav-overlay svg {
+        transform: rotateZ(90deg) scale(2) translateX(-5px) translateY(20px);
+        fill: #fff;
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        opacity: 0;
     }
 }
