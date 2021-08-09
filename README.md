@@ -37,3 +37,20 @@ Or run development command
 ```
 npm run dev
 ```
+
+## Dependencies
+```
+"ejs": "^3.1.6",
+"express": "^4.17.1",
+"rimraf": "^3.0.2"
+```
+
+## Dev Dependencies
+```
+"gulp": "^4.0.2",
+"gulp-autoprefixer": "^8.0.0",
+"gulp-clean-css": "^4.3.0",
+"gulp-concat": "^2.6.1",
+"gulp-uglify": "^3.0.2",
+"nodemon": "^2.0.12"
+```
