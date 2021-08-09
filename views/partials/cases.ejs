@@ -2,7 +2,7 @@
     <ul class="cases-container">
         <% data.forEach(tile => { %>
             <li class="case">
-                <a href="">
+                <a href="<%= tile.url %>">
                     <img src="./img/<%= tile.img %>" alt="<%= tile.client %>">
                     <p><%= tile.client %></p>
                     <h3><%= tile.title %></h3>
@@ -17,7 +17,6 @@
                             View case
                         </span>
                     </p>
-
                 </a>
             </li>
         <% }) %>
