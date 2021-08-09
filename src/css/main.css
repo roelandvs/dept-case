@@ -7,10 +7,20 @@ h3 {
     color: var(--cl-text);
 }
 
+.filter {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.9em;
+    margin: var(--margin-m) 0;
+    text-align: right;
+}
+
 .cases-container {
-    padding: var(--padding-l) var(--padding-m);
+    padding: var(--padding-m);
     max-width: var(--max-width);
     margin: 0 auto;
+}
+
+.cases-container ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -111,6 +121,10 @@ p.view-link {
     /* Cases section */
     .case {
         width: calc(50% - 15px);
+    }
+
+    .cases-container {
+        padding: var(--padding-l);
     }
 
     /* Clients section */
