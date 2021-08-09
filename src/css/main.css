@@ -85,7 +85,7 @@ p.view-link {
 }
 
 .clients-list li {
-    width: 200px;
+    width: 150px;
     height: 80px;
     background-color: rgb(221, 221, 221);
     margin-bottom: 5px;
@@ -116,5 +116,9 @@ p.view-link {
     /* Clients section */
     .m-screen {
         display: inline;
+    }
+
+    .clients-list li {
+        width: 200px;
     }
 }

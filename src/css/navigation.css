@@ -4,7 +4,6 @@ nav {
     left: 0;
     right: 0;
     width: 100%;
-    padding: var(--padding-m);
     font-size: 1.4em;
     font-weight: 500;
     z-index: 10;
@@ -14,14 +13,21 @@ nav {
 .menu-bar {
     display: flex;
     justify-content: space-between;
-    max-width: calc(var(--max-width) - 2 * var(--padding-m));
+    max-width: var(--max-width);
     margin: 0 auto;
+    padding: var(--padding-m);
+    transition: background-color 0.5s ease-out, padding 0.5s ease-out;
 }
 
 .menu-bar p {
     font-family: 'Teko', sans-serif;
     font-weight: 500;
     font-size: 1.2em;
+}
+
+nav.scroll .menu-bar {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px var(--padding-m);
 }
 
 /* Nav overlay */
